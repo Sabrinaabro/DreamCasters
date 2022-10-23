@@ -5,15 +5,15 @@ public class Destinations extends JFrame implements Runnable{
     Thread t1;
     JLabel l1,l2,l3,l4,l5,l6,l7,l8,l9,l10;
     JLabel[] label=new JLabel[]{l1,l2,l3,l4,l5,l6,l7,l8,l9,l10};
-    //JLabel caption;
+    JLabel caption;
     public void run(){
-       // String[] text=new String[]{"Arctic Glass Igloos","Cappadocia,Turkey","Sunset Plains",
-                //"Eiffel Tower,Paris","Halfway to Heaven","Cwmbran Boating Lake","Sky diving,Pattaya",
-                //"Cherry Blossoms","San Cassiano","Big Ben,london"};
+        String[] text=new String[]{"Arctic Glass Igloos","Cappadocia,Turkey","Sunset Plains",
+                "Eiffel Tower,Paris","Halfway to Heaven","Cwmbran Boating Lake","Sky diving,Pattaya",
+                "Cherry Blossoms","San Cassiano","Big Ben, London"};
         try{
             for (int i=0;i<=9;i++){
                 label[i].setVisible(true);
-                //caption.setText(text[i]);
+                caption.setText(text[i]);
                 Thread.sleep(3000);
                 label[i].setVisible(false);
             }
@@ -25,11 +25,11 @@ public class Destinations extends JFrame implements Runnable{
     Destinations(){
         setBounds(500,200,800,600);
 
-        /*caption=new JLabel();
+        caption=new JLabel();
         caption.setBounds(50,500,1000,70);
         caption.setFont(new Font("Serif Bold Italic",Font.PLAIN,40));
         caption.setForeground(Color.WHITE);
-        add(caption);*/
+        add(caption);
 
         ImageIcon i1=null,i2 = null,i3 = null,i4=null,i5=null,i6=null,i7=null,i8=null,i9=null,i10=null;
         ImageIcon[] image=new ImageIcon[]{i1,i2,i3,i4,i5,i6,i7,i8,i9,i10};
