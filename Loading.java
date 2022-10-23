@@ -14,13 +14,13 @@ public class Loading extends JFrame implements Runnable {
                     bar.setValue(bar.getValue()+1);
                 }else{
                     setVisible(false);
-                    new Dashboard(Username);
                 }
                 Thread.sleep(40);
             }
         }catch (Exception e){
             e.printStackTrace();
         }
+        new Dashboard(Username);
     }
     Loading(String Username){
         this.Username=Username;
@@ -54,8 +54,8 @@ public class Loading extends JFrame implements Runnable {
         add(welcome);
 
         t.start();
-
         setVisible(true);
+
     }
     public static void main(String[] args) {
         new Loading("");
