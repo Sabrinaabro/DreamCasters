@@ -17,14 +17,14 @@ public class Dashboard extends JFrame implements ActionListener {
         JPanel p1=new JPanel();
         p1.setLayout(null);
         p1.setBackground(new Color(0,0,102));
-        p1.setBounds(0,0,1600,65);
+        p1.setBounds(0,0,1600,53);
         add(p1);
 
         ImageIcon i1=new ImageIcon(ClassLoader.getSystemResource("icons/dashboard.jpg"));
         Image i2=i1.getImage().getScaledInstance(70,70,Image.SCALE_DEFAULT);
         ImageIcon i3=new ImageIcon(i2);
         JLabel icon=new JLabel(i3);
-        icon.setBounds(4,0,70,70);
+        icon.setBounds(4,0,70,65);
         p1.add(icon);
 
         JLabel heading=new JLabel("Dashboard");
@@ -36,7 +36,7 @@ public class Dashboard extends JFrame implements ActionListener {
         JPanel p2=new JPanel();
         p2.setLayout(null);
         p2.setBackground(new Color(0,0,102));
-        p2.setBounds(0,65,300,900);
+        p2.setBounds(0,53,300,900);
         add(p2);
 
         adddetails=new JButton("Add Personal Details");
@@ -45,7 +45,6 @@ public class Dashboard extends JFrame implements ActionListener {
         adddetails.setForeground(Color.white);
         adddetails.setFont(new Font("Tahoma",Font.PLAIN,20));
         adddetails.setMargin(new Insets(0,0,0,60));
-        adddetails.addActionListener(this);
         adddetails.addActionListener(this);
         p2.add(adddetails);
 
